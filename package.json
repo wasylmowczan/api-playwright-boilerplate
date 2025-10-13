@@ -1,0 +1,31 @@
+{
+  "name": "api-playwright-boilerplate",
+  "version": "1.0.0",
+  "description": "Selleo API Playwright Typescript Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --quiet",
+    "test:logs": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:ui": "playwright test --ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Selleo/api-playwright-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Selleo/api-playwright-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Selleo/api-playwright-boilerplate#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
