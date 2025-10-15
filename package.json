@@ -1,7 +1,7 @@
 {
   "name": "api-playwright-boilerplate",
   "version": "1.0.0",
-  "description": "Selleo API Playwright Typescript Boilerplate",
+  "description": "API Playwright Typescript Boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "playwright test --quiet",
