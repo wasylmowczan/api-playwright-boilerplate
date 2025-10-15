@@ -2,6 +2,10 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Playwright_Logo.svg" alt="Playwright logo" width=370>
 <h3 align="center">Playwright Typescript Boilerplate</h3>
 
+This project contains Playwright automation tests for the [JSONBin.io](https://jsonbin.io/) API. JSONBin.io provides a simple REST interface to store & retrieve JSON data from the cloud, helping developers focus on app development by taking care of their database infrastructure.
+
+**API Documentation**: [https://jsonbin.io/api-reference](https://jsonbin.io/api-reference)
+
 ## Tests architecture
 
 For automation tests architecture we use Page Object Pattern. All necessary files are placed in `tests` directory, which primarily includes:
