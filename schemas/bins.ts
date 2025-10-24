@@ -1,12 +1,12 @@
-import { expect } from '@playwright/test';
+import { expect } from "@playwright/test";
 
 const createBinSchema = () => ({
-    record: expect.any(Object),
-    metadata: {
-        id: expect.any(String),
-        createdAt: expect.any(String),
-        private: expect.any(Boolean)
-    }
+  record: expect.any(Object),
+  metadata: {
+    id: expect.any(String),
+    createdAt: expect.any(String),
+    private: expect.any(Boolean),
+  },
 });
 
 // Export schema

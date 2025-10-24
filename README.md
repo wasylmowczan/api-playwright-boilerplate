@@ -36,6 +36,30 @@ To run smoke tests:
 npm run test:smoke
 ```
 
+## Husky, ESLint, and Prettier
+
+We use a mix of [Husky](https://github.com/typicode/husky), [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) within our repository to help enforce consistent coding practices.
+
+### ESLint
+
+```bash
+# Check for errors
+npm run lint
+
+# Fix errors automatically
+npm run lint:fix
+```
+
+### Prettier
+
+```bash
+# Check formatting
+npm run prettier
+
+# Fix formatting
+npm run prettier:fix
+```
+
 ## Test Reports
 
 The project uses different reporters based on the environment:

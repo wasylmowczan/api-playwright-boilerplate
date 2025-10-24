@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo '🏗️👷 -- Check styling, formatting, and TypeScript code before committing -- 👷🏗️'
+
+npm run lint && npm run prettier
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ You win this time... Committing changes now. ✅✅✅✅'

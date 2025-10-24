@@ -7,7 +7,12 @@
     "test": "playwright test --quiet",
     "test:logs": "playwright test",
     "test:smoke": "playwright test --grep @smoke",
-    "test:ui": "playwright test --ui"
+    "test:ui": "playwright test --ui",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -22,8 +27,15 @@
   },
   "homepage": "https://github.com/Selleo/api-playwright-boilerplate#readme",
   "devDependencies": {
+    "@eslint/js": "^9.38.0",
     "@playwright/test": "^1.56.0",
-    "@types/node": "^24.7.2"
+    "@types/node": "^24.7.2",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^8.0.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
   },
   "dependencies": {
     "dotenv": "^17.2.3"
