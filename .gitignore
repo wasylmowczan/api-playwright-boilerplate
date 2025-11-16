@@ -1,3 +1,9 @@
+*.log
+.DS_Store
+.idea/
+.vscode/
+.env.*
+!.env.example
 
 # Playwright
 node_modules/

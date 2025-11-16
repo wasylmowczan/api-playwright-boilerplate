@@ -1,8 +1,12 @@
 import { defineConfig, devices } from "@playwright/test";
 import { config as loadEnv } from "dotenv";
 
+const environmentPath = process.env.ENVIRONMENT
+  ? `./env/.env.${process.env.ENVIRONMENT}`
+  : `./env/.env.prod`; // Default to demo environment
+
 // Load environment variables from .env files early
-loadEnv();
+loadEnv({ path: environmentPath });
 
 /**
  * See https://playwright.dev/docs/test-configuration.

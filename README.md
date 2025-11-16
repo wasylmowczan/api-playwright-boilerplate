@@ -15,6 +15,47 @@ For automation tests architecture we use Page Object Pattern. All necessary file
 - `utils` helpful functions and tools to support test execution,
 - `schemas` with objects for asserting response body,
 
+### Setup Steps
+
+1. **Create your local environment file:**
+
+   ```bash
+   cp env/.env.example env/.env.local
+   cp env/.env.example env/.env.prod
+   ```
+
+2. **Configure your variables** in `env/.env.local` and `env/.env.prod`:
+
+   ```bash
+   BASE_URL=https://api.jsonbin.io
+   ACCESS_KEY=....
+   ```
+
+#### Environment Selection
+
+- **Default**: Uses `env/.env.prod` if no environment is specified
+- **Custom**: Set `ENVIRONMENT` variable to use specific config:
+
+  ```bash
+  # macOS/Linux
+  export ENVIRONMENT=local
+
+  # Windows PowerShell
+  $env:ENVIRONMENT='local'
+  ```
+
+- **Verify you environment variable**:
+
+  ```bash
+  # macOS/Linux
+  echo $ENVIRONMENT
+
+  # Windows PowerShell
+  echo $env:ENVIRONMENT
+  ```
+
+**Note:** Never commit your `.env` files to version control. Only commit the `.env.example` template for team collaboration.
+
 ## Tests
 
 To install Playwright and it's browsers
